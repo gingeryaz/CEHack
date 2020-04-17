@@ -12,33 +12,42 @@ android:paddingTop="16dp"
 android:orientation="vertical"
 tools:context=".FileInOut">
 
-<Button
-    android:id="@+id/playbutton"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:background="#0091EA"
-    android:onClick="videoplay"
-    android:text="Play Tutorial "
-    android:textColor="#FFFFFF"
-    android:textColorHighlight="#0091EA"
-    android:textColorLink="#0091EA" />
 
-<VideoView
-    android:id="@+id/videoView"
-    android:layout_width="match_parent"
-    android:layout_height="500dp"
-    android:layout_weight="1" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:text="TextView" />
 
-<Button
-    android:id="@+id/quizButton"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:background="#0091EA"
-    android:text="Take the Quiz"
-    android:textColor="#FFFFFF"
-    android:textColorHighlight="#0091EA"
-    android:textColorLink="#0091EA" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#F566B1E3"
+        android:text="Button"
+        android:textColor="#fff"
+        tools:text="Play Tutorial" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#F6F0CB"
+        android:text="Take the quiz"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:text="TextView" />
+
+   
 
 </LinearLayout>
