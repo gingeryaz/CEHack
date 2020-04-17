@@ -17,6 +17,7 @@ tools:context=".FileInOut">
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="104dp"
+        android:textColor="#fff"
         android:text="TextView" />
 
     <Button
@@ -25,6 +26,7 @@ tools:context=".FileInOut">
         android:layout_height="63dp"
         android:background="#F566B1E3"
         android:text="Button"
+        android:textSize="17dp"
         android:textColor="#fff"
         tools:text="Play Tutorial" />
 
@@ -40,14 +42,16 @@ tools:context=".FileInOut">
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:background="#F6F0CB"
+        android:textSize="17dp"
         android:text="Take the quiz"
         android:textColor="#000000" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="104dp"
-        android:text="TextView" />
+        android:textColor="#fff"
+        android:text="TextView2" />
 
-   
+
 
 </LinearLayout>
