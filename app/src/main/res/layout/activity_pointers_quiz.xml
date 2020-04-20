@@ -39,8 +39,8 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="376dp"
-        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:textAlignment="center"
         android:background="#F566B1E3"

@@ -21,11 +21,10 @@ tools:context=".FileInOut">
         android:text="TextView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/playbutton"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:background="#F566B1E3"
-        android:text="Button"
         android:textSize="17dp"
         android:textColor="#fff"
         tools:text="Play Tutorial" />
@@ -38,7 +37,7 @@ tools:context=".FileInOut">
         android:background="#fff" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/quizButton"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:background="#F6F0CB"

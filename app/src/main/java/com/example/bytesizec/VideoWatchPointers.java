@@ -40,7 +40,7 @@ public class VideoWatchPointers extends AppCompatActivity {
     }
 
     public void videoplay(View v) {
-        String videopath = "android.resource://com.example.bytesizec/" + R.raw.zoom_0;
+        String videopath = "android.resource://com.example.bytesizec/" + R.raw.pointervid;
         Uri uri = Uri.parse(videopath);
         videov.setVideoURI(uri);
         videov.setMediaController(mediaC);

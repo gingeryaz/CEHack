@@ -76,9 +76,9 @@ public class InOutQuiz extends AppCompatActivity {
                     mScore = mScore + 1;
                     updateScore(mScore);
                     updateQuestion();
-
+                    Toast.makeText(InOutQuiz.this, "Correct!", Toast.LENGTH_SHORT).show();
                 } else {
-
+                    Toast.makeText(InOutQuiz.this, "Wrong!", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
             }
