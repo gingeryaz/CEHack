@@ -24,7 +24,7 @@
     <Button
         android:id="@+id/dataTypeButton"
         android:layout_width="372dp"
-        android:layout_height="76dp"
+        android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="25dp"
         android:background="#0091EA"
@@ -35,7 +35,7 @@
     <Button
         android:id="@+id/loopsButton"
         android:layout_width="374dp"
-        android:layout_height="73dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="#F03EA5E4"
         android:padding="8dp"
@@ -45,11 +45,11 @@
     <Button
         android:id="@+id/referenceButton"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="#64B6E8"
         android:padding="8dp"
-        android:text="Pass-by-Value and Pass-By-reference"
+        android:text="Pass-by-Value and Pass-y-Reference"
         android:textColor="#fff" />
 
 
@@ -57,7 +57,7 @@
     <Button
         android:id="@+id/inoutbutton"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="#9DD7FB"
         android:padding="8dp"
@@ -67,7 +67,7 @@
     <Button
         android:id="@+id/pointerbutton"
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="50dp"
         android:layout_gravity="bottom"
         android:layout_marginBottom="24dp"
         android:background="#E9A1CEEA"
@@ -76,5 +76,15 @@
 
         android:textColor="#fff" />
 
+    <Button
+        android:id="@+id/progressbutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:background="#673AB7"
+        android:padding="8dp"
+        android:text="Track Your Progress"
+        android:textColor="#fff" />
 
 </LinearLayout>

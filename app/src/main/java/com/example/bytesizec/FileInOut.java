@@ -20,7 +20,7 @@ public class FileInOut extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_file_in_out);
+        setContentView(R.layout.activity_video_watch_pointers);
         clk = (Button) findViewById(R.id.playbutton);
         videov = (VideoView) findViewById(R.id.videoView);
         mediaC = new MediaController(this);
@@ -35,13 +35,12 @@ public class FileInOut extends AppCompatActivity {
         });
     }
 
-    public void videoplay (View v){
-        String videopath = "android.resource://com.example.bytesizec/"+ R.raw.zoom_0;
-        Uri uri= Uri.parse(videopath);
+    public void videoplay(View v) {
+        String videopath = "android.resource://com.example.bytesizec/" + R.raw.zoom_0;
+        Uri uri = Uri.parse(videopath);
         videov.setVideoURI(uri);
         videov.setMediaController(mediaC);
         mediaC.setAnchorView(videov);
         videov.start();
     }
-
 }

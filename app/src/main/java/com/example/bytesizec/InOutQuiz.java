@@ -95,13 +95,19 @@ public class InOutQuiz extends AppCompatActivity {
     }
 
     private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+        if (mQuestionNumber >=4){
+            ((ScoresClass) InOutQuiz.this.getApplication()).setInout_score(mScore);
+            Intent intent = new Intent(InOutQuiz.this, LecturesMenu.class);
+            startActivity(intent);
+        } else {
+            mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
+            mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
+            mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
+            mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
 
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
-        mQuestionNumber++;
+            mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+            mQuestionNumber++;
+        }
     }
 
     private void updateScore(int point) {

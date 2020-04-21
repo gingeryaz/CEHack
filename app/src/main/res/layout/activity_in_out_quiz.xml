@@ -40,7 +40,7 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="376dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:textAlignment="center"
         android:background="#F566B1E3"
@@ -48,7 +48,8 @@
         android:typeface="sans"
         android:textAllCaps="true"
         android:text="What does a pointer store?"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/choice1"

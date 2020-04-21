@@ -47,14 +47,9 @@ public class Question {
         String choice2= mChoices[a][2];
         return choice2;
     }
-    public String getChoice4(int a){
 
-        String choice3= mChoices[a][3];
-        return choice3;
-    }
-
-    public String getCorrectAnswer(int a){
-        String answer = mCorrectAnswers[a];
+    public String getCorrectAnswer(int b){
+        String answer = mCorrectAnswers[b];
         return answer;
     }
 

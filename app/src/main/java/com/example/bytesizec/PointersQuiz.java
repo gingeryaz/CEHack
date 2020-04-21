@@ -26,7 +26,6 @@ public class PointersQuiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pointers_quiz);
-
         mScoreView = (TextView) findViewById(R.id.score);
         mQuestionView= (TextView) findViewById(R.id.question);
         mButtonChoice1 = (Button) findViewById(R.id.choice1);
@@ -34,22 +33,26 @@ public class PointersQuiz extends AppCompatActivity {
         mButtonChoice3 = (Button) findViewById(R.id.choice3);
         quitButton = (Button) findViewById(R.id.quit);
 
+
         updateQuestion();
         //Start of Button Listener for Button 1
         mButtonChoice1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                if (mButtonChoice1.getText() == mAnswer) {
-                    mScore = mScore + 1;
-                    updateScore(mScore);
-                    updateQuestion();
-                    Toast.makeText(PointersQuiz.this, "Correct!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(PointersQuiz.this, "Wrong!", Toast.LENGTH_SHORT).show();
-                    updateQuestion();
+                    if (mButtonChoice1.getText() == mAnswer) {
+                        mScore = mScore + 1;
+                        updateScore(mScore);
+                        updateQuestion();
+                        Toast.makeText(PointersQuiz.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(PointersQuiz.this, "Wrong!", Toast.LENGTH_SHORT).show();
+                        updateQuestion();
+                    }
+
                 }
-            }
-        });
+
+
+            });
 
         //Start of Button Listener for Button 2
         mButtonChoice2.setOnClickListener(new View.OnClickListener(){
@@ -91,16 +94,22 @@ public class PointersQuiz extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
-
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
-        mQuestionNumber++;
+        if (mQuestionNumber >=5){
+            ((ScoresClass) PointersQuiz.this.getApplication()).setPointers_score(mScore);
+            Intent intent = new Intent(PointersQuiz.this, LecturesMenu.class);
+            startActivity(intent);
+        } else {
+            mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
+            mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
+            mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
+            mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+            mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+            mQuestionNumber++;
+        }
     }
 
     private void updateScore(int point) {

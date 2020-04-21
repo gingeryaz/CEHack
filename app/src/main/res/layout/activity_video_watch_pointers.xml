@@ -5,10 +5,10 @@
     android:id="@+id/Title"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:paddingBottom="104dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingTop="104dp"
     android:orientation="vertical"
     tools:context=".VideoWatchPointers">
 
@@ -27,7 +27,7 @@
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="285dp"
         android:layout_weight="1" />
 
     <Button
@@ -35,9 +35,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#0091EA"
+        android:background="#F6F0CB"
         android:text="Take the Quiz"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorHighlight="#0091EA"
         android:textColorLink="#0091EA" />
 

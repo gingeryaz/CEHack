@@ -14,6 +14,7 @@ import android.view.View;
 
 
 
+
 public class VideoWatchPointers extends AppCompatActivity {
     Button clk;
     VideoView videov;
