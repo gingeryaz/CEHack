@@ -3,7 +3,7 @@ package com.example.bytesizec;
 public class Question2 {
     private String mQuestions [] = {
             "If statements can only evaluate 1 condition.",
-            "Which of the following expressions can be used if only one condition has to be true in order for the code to execute?"
+            "Which of the following expressions can be used if only one condition has to be true in order for the code to execute?",
             "Which of the following loops execute first then evaluates the condition given?",
             "If you want to iterate through a certain range which loop is going to be most efficient?"
     };
@@ -11,7 +11,7 @@ public class Question2 {
             {"true", "false"},
             {"&&", ">", "||"},
             {"Do-while loop", "While loop", "If else statement", "For loop"},
-            {"Do-while loop", "While loop", "If else statement", "For loop"}         
+            {"Do-while loop", "While loop", "If else statement", "For loop"}
     };
 
     private String mCorrectAnswers []=
@@ -47,3 +47,4 @@ public class Question2 {
         return answer;
     }
 }
+
