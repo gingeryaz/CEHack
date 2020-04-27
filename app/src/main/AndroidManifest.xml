@@ -11,7 +11,10 @@
         android:name=".ScoresClass"
         android:theme="@style/AppTheme">
         <activity android:name=".InOutQuiz"/>
+        <activity android:name=".ValueQuiz"/>
+        <activity android:name=".DataQuiz"/>
         <activity android:name=".FileInOut"/>
+        <activity android:name=".LoopsQuiz"/>
         <activity android:name=".LecturesMenu">
             <intent-filter>
                 <action android:name="android.intent.action.Main" />
@@ -21,6 +24,9 @@
         </activity>
         <activity android:name=".VideoWatchPointers"/>
         <activity android:name=".PointersQuiz"/>
+        <activity android:name=".DataVideo"/>
+        <activity android:name=".ValueVideo"/>
+        <activity android:name=".loops"/>
          <activity android:name=".Progress"/>
 
 
