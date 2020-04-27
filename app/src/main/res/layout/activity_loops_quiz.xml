@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    tools:context=".InOutQuiz">
+    tools:context=".LoopsQuiz">
 
     <RelativeLayout
         android:layout_width="match_parent"
