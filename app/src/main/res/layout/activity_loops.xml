@@ -10,7 +10,7 @@ android:paddingLeft="16dp"
 android:paddingRight="16dp"
 android:paddingTop="104dp"
 android:orientation="vertical"
-tools:context=".FileInOut">
+tools:context=".loops">
 
     <Button
         android:id="@+id/playbutton"
