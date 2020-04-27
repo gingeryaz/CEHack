@@ -1,50 +1,41 @@
 package com.example.bytesizec;
 
 public class Question2 {
-    private String mQuestions [] = {
-            "If statements can only evaluate 1 condition.",
-            "Which of the following expressions can be used if only one condition has to be true in order for the code to execute?",
-            "Which of the following loops execute first then evaluates the condition given?",
-            "If you want to iterate through a certain range which loop is going to be most efficient?"
+    private String mQuestions[] = {
+            "Choose the correct answer for following function prototype: void func(int a,int &b);",
+            "Which statement is correct about passing the parameter as a value?",
+            "What of the following is not found in the stack frame of a function?\n"
     };
-    private String mChoices [] []= {
-            {"true", "false"},
-            {"&&", ">", "||"},
-            {"Do-while loop", "While loop", "If else statement", "For loop"},
-            {"Do-while loop", "While loop", "If else statement", "For loop"}
+    private String mChoices[][] = {
+            {"a is pass by value and b is pass by reference", "a is pass by reference and b is pass by value", "a is pass by value and b is pass by address", "a is pass by value and b is pass by pointer"},
+            {"It can change the actual parameter value", "It cannot change the actual parameter value", "Parameters is always in read-write mode", "None"},
+            {"Parameters", "Return Address", "Code for function", "Local Variables"}
     };
 
-    private String mCorrectAnswers []=
-            {"false", "||", "Do while loop", "For loop"};
+    private String mCorrectAnswers[] = {"a is pass by value and b is pass by reference", "It cannot change the actual parameter value", "Code for function"};
 
-    public String getQuestion (int a) {
+    public String getQuestion(int a) {
         String question = mQuestions[a];
         return question;
     }
 
-    public String getChoice1 (int a) {
+    public String getChoice1(int a) {
         String choice0 = mChoices[a][0];
         return choice0;
     }
 
-    public String getChoice2 (int a) {
+    public String getChoice2(int a) {
         String choice1 = mChoices[a][1];
         return choice1;
     }
 
-    public String getChoice3 (int a) {
+    public String getChoice3(int a) {
         String choice2 = mChoices[a][2];
         return choice2;
     }
 
-    public String getChoice4 (int a) {
-        String choice2 = mChoices[a][3];
-        return choice2;
-    }
-
-    public String getCorrectAnswer (int a) {
+    public String getCorrectAnswer(int a) {
         String answer = mCorrectAnswers[a];
         return answer;
     }
 }
-
