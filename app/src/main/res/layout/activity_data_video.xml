@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".DataVideo">
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0091EA"
+        android:onClick="videoplay"
+        android:text="Play Tutorial "
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#0091EA"
+        android:textColorLink="#0091EA" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0091EA"
+        android:text="Take the Quiz"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#0091EA"
+        android:textColorLink="#0091EA" />
+
+</LinearLayout>
