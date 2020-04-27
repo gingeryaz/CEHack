@@ -1,41 +1,57 @@
 package com.example.bytesizec;
 
 public class Question2 {
-    private String mQuestions[] = {
-            "Choose the correct answer for following function prototype: void func(int a,int &b);",
-            "Which statement is correct about passing the parameter as a value?",
-            "What of the following is not found in the stack frame of a function?\n"
+    private String mQuestions [] = {
+            "Which of these is not a data type?",
+            "If I declare the variable num as an int, which of these could be a possible output for num?",
+            "Which data type is more precise?",
+            "What do we use in order for our code to ask the user for an input?",
+            "What is the paper format for Cin?"
     };
-    private String mChoices[][] = {
-            {"a is pass by value and b is pass by reference", "a is pass by reference and b is pass by value", "a is pass by value and b is pass by address", "a is pass by value and b is pass by pointer"},
-            {"It can change the actual parameter value", "It cannot change the actual parameter value", "Parameters is always in read-write mode", "None"},
-            {"Parameters", "Return Address", "Code for function", "Local Variables"}
+    private String mChoices [] []= {
+            {"int", "bool", "wholenum", "char"},
+            {"20.5", "Eight", "14", "None of the above"},
+            {"float", "double", "Both are equally as precise"},
+            {"cin","cout", "Both of the above", "None of the above"},
+            {"cin<<","cin=", "cin>>", "cin;"}
     };
 
-    private String mCorrectAnswers[] = {"a is pass by value and b is pass by reference", "It cannot change the actual parameter value", "Code for function"};
+    private String mCorrectAnswers []=
+            {"wholenum", "14" , "double", "cin", "cin>>"};
 
-    public String getQuestion(int a) {
+    public String getQuestion (int a) {
         String question = mQuestions[a];
         return question;
     }
 
-    public String getChoice1(int a) {
+    public String getChoice1 (int a) {
         String choice0 = mChoices[a][0];
         return choice0;
     }
 
-    public String getChoice2(int a) {
+    public String getChoice2 (int a) {
         String choice1 = mChoices[a][1];
         return choice1;
     }
 
-    public String getChoice3(int a) {
+    public String getChoice3 (int a) {
         String choice2 = mChoices[a][2];
         return choice2;
     }
 
-    public String getCorrectAnswer(int a) {
+    public String getChoice4 (int a) {
+        String choice3 = mChoices[a][3];
+        return choice3;
+    }
+
+    public String getChoice5 (int a) {
+        String choice4 = mChoices[a][4];
+        return choice4;
+    }
+
+    public String getCorrectAnswer (int a) {
         String answer = mCorrectAnswers[a];
         return answer;
     }
 }
+
