@@ -36,7 +36,7 @@ public class loops extends AppCompatActivity {
     }
 
     public void videoplay (View v){
-        String videopath = "android.resource://com.example.bytesizec/"+ R.raw.zoom_2;
+        String videopath = "android.resource://com.example.bytesizec/"+ R.raw.loopsvid;
         Uri uri= Uri.parse(videopath);
         videov.setVideoURI(uri);
         videov.setMediaController(mediaC);

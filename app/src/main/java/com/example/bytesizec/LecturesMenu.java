@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LecturesMenu extends AppCompatActivity {
-    public Button pointers, inout, dataType, reference, loops;
+    public Button pointers, inout, dataType, reference, loops, progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,8 @@ public class LecturesMenu extends AppCompatActivity {
             }
         });
 
-        pointers = (Button) findViewById(R.id.dataTypeButton);
-        pointers.setOnClickListener(new View.OnClickListener() {
+        dataType = (Button) findViewById(R.id.dataTypeButton);
+        dataType.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LecturesMenu.this,DataVideo.class);
@@ -42,8 +42,8 @@ public class LecturesMenu extends AppCompatActivity {
             }
         });
 
-        pointers = (Button) findViewById(R.id.referenceButton);
-        pointers.setOnClickListener(new View.OnClickListener() {
+        reference = (Button) findViewById(R.id.referenceButton);
+        reference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LecturesMenu.this,ValueVideo.class);
@@ -61,8 +61,8 @@ public class LecturesMenu extends AppCompatActivity {
         });
 
 
-        inout = (Button) findViewById(R.id.loopsButton);
-        inout.setOnClickListener(new View.OnClickListener() {
+        loops = (Button) findViewById(R.id.loopsButton);
+        loops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LecturesMenu.this,loops.class);

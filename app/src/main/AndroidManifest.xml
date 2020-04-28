@@ -13,7 +13,8 @@
         <activity android:name=".InOutQuiz"/>
         <activity android:name=".ValueQuiz"/>
         <activity android:name=".DataQuiz"/>
-        <activity android:name=".FileInOut"/>
+        <activity android:name=".FileInOut"
+            android:screenOrientation="landscape"/>
         <activity android:name=".LoopsQuiz"/>
         <activity android:name=".LecturesMenu">
             <intent-filter>
@@ -22,12 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VideoWatchPointers"/>
+        <activity android:name=".VideoWatchPointers"
+                android:screenOrientation="landscape"/>
+
         <activity android:name=".PointersQuiz"/>
-        <activity android:name=".DataVideo"/>
-        <activity android:name=".ValueVideo"/>
-        <activity android:name=".loops"/>
-         <activity android:name=".Progress"/>
+        <activity android:name=".DataVideo"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ValueVideo"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".loops"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Progress"/>
 
 
 

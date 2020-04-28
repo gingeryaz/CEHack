@@ -3,16 +3,18 @@ package com.example.bytesizec;
 public class QuestionLibrary2 {
     private String mQuestions[] = {
             "Choose the correct answer for following function prototype: void func(int a,int &b);",
+            "What is the return type of the following function: int func(int a, int b)",
             "Which statement is correct about passing the parameter as a value?",
             "What of the following is not found in the stack frame of a function?"
     };
     private String mChoices[][] = {
             {"a is pass by value and b is pass by reference", "a is pass by reference and b is pass by value", "a is pass by value and b is pass by address", "a is pass by value and b is pass by pointer"},
+            {"void", "int", "char"},
             {"It can change the actual parameter value", "It cannot change the actual parameter value", "Parameters is always in read-write mode", "None"},
             {"Parameters", "Return Address", "Code for function", "Local Variables"}
     };
 
-    private String mCorrectAnswers[] = {"a is pass by value and b is pass by reference", "It cannot change the actual parameter value", "Code for function"};
+    private String mCorrectAnswers[] = {"a is pass by value and b is pass by reference", "int", "It cannot change the actual parameter value", "Code for function"};
 
     public String getQuestion(int a) {
         String question = mQuestions[a];

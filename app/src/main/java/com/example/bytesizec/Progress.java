@@ -26,11 +26,11 @@ public class Progress extends AppCompatActivity {
 
 
 
-        datascore.setText(""+((ScoresClass) this.getApplication()).getData_types_score() + "/5");
-        funcscore.setText(""+((ScoresClass) this.getApplication()).getFuncts_score()+ "/5");
-        passbyscore.setText(""+((ScoresClass) this.getApplication()).getPass_by_score()+ "/5");
-        inoutscore.setText(""+((ScoresClass) this.getApplication()).getInout_score()+ "/5");
-        pointerscore.setText(""+((ScoresClass) this.getApplication()).getPointers_score()+ "/5");
+        datascore.setText(""+((ScoresClass) this.getApplication()).getData_types_score() + "/4");
+        funcscore.setText(""+((ScoresClass) this.getApplication()).getFuncts_score()+ "/4");
+        passbyscore.setText(""+((ScoresClass) this.getApplication()).getPass_by_score()+ "/4");
+        inoutscore.setText(""+((ScoresClass) this.getApplication()).getInout_score()+ "/4");
+        pointerscore.setText(""+((ScoresClass) this.getApplication()).getPointers_score()+ "/4");
 
     }
 }

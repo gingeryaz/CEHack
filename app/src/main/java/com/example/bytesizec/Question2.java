@@ -5,19 +5,17 @@ public class Question2 {
             "Which of these is not a data type?",
             "If I declare the variable num as an int, which of these could be a possible output for num?",
             "Which data type is more precise?",
-            "What do we use in order for our code to ask the user for an input?",
-            "What is the paper format for Cin?"
+            "What do we use in order for our code to ask the user for an input?"
     };
     private String mChoices [] []= {
             {"int", "bool", "wholenum", "char"},
             {"20.5", "Eight", "14", "None of the above"},
             {"float", "double", "Both are equally as precise"},
-            {"cin","cout", "Both of the above", "None of the above"},
-            {"cin<<","cin=", "cin>>", "cin;"}
+            {"cin","cout", "Both of the above", "None of the above"}
     };
 
     private String mCorrectAnswers []=
-            {"wholenum", "14" , "double", "cin", "cin>>"};
+            {"wholenum", "14" , "double", "cin"};
 
     public String getQuestion (int a) {
         String question = mQuestions[a];
@@ -39,15 +37,6 @@ public class Question2 {
         return choice2;
     }
 
-    public String getChoice4 (int a) {
-        String choice3 = mChoices[a][3];
-        return choice3;
-    }
-
-    public String getChoice5 (int a) {
-        String choice4 = mChoices[a][4];
-        return choice4;
-    }
 
     public String getCorrectAnswer (int a) {
         String answer = mCorrectAnswers[a];

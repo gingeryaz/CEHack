@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ValueQuiz extends AppCompatActivity {
-    private Question2 mQuestionLibrary = new Question2();
+    private QuestionLibrary2 mQuestionLibrary = new QuestionLibrary2();
 
     private TextView mScoreView;
     private TextView mQuestionView;
@@ -94,14 +94,20 @@ public class ValueQuiz extends AppCompatActivity {
     }
 
     private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
-
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
-        mQuestionNumber++;
+        if (mQuestionNumber >=4){
+            ((ScoresClass) ValueQuiz.this.getApplication()).setPass_by_score(mScore);
+            Intent intent = new Intent(ValueQuiz.this, LecturesMenu.class);
+            startActivity(intent);
+        } else {
+            mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
+            mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
+            mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
+            mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+            mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+            mQuestionNumber++;
+        }
     }
+
 
     private void updateScore(int point) {
         mScoreView.setText(""+mScore);

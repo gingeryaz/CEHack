@@ -8,10 +8,10 @@ public class Question3 {
             "If you want to iterate through a certain range which loop is going to be most efficient?"
     };
     private String mChoices [] []= {
-            {"true", "false"},
+            {"True", "False","Not Enough Information Given"},
             {"&&", ">", "||"},
-            {"Do-while loop", "While loop", "If else statement", "For loop"},
-            {"Do-while loop", "While loop", "If else statement", "For loop"}
+            {"Do-while loop", "While loop", "If else statement"},
+            {"Do-while loop", "For loop", "If else statement"}
     };
 
     private String mCorrectAnswers []=
@@ -34,11 +34,6 @@ public class Question3 {
 
     public String getChoice3 (int a) {
         String choice2 = mChoices[a][2];
-        return choice2;
-    }
-
-    public String getChoice4 (int a) {
-        String choice2 = mChoices[a][3];
         return choice2;
     }
 

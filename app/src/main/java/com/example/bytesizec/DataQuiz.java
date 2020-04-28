@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class DataQuiz extends AppCompatActivity {
-    private QuestionLibrary2 mQuestionLibrary = new QuestionLibrary2();
+    private Question2 mQuestionLibrary = new Question2();
 
     private TextView mScoreView;
     private TextView mQuestionView;
@@ -94,14 +94,20 @@ public class DataQuiz extends AppCompatActivity {
     }
 
     private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
-
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
-        mQuestionNumber++;
+        if (mQuestionNumber >=4){
+            ((ScoresClass) DataQuiz.this.getApplication()).setData_types_score(mScore);
+            Intent intent = new Intent(DataQuiz.this, LecturesMenu.class);
+            startActivity(intent);
+        } else {
+            mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
+            mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
+            mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
+            mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+            mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+            mQuestionNumber++;
+        }
     }
+
 
     private void updateScore(int point) {
         mScoreView.setText(""+mScore);

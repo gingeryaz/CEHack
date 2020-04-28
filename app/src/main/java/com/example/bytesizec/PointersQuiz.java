@@ -98,7 +98,7 @@ public class PointersQuiz extends AppCompatActivity {
     }
 
     private void updateQuestion(){
-        if (mQuestionNumber >=5){
+        if (mQuestionNumber >=4){
             ((ScoresClass) PointersQuiz.this.getApplication()).setPointers_score(mScore);
             Intent intent = new Intent(PointersQuiz.this, LecturesMenu.class);
             startActivity(intent);

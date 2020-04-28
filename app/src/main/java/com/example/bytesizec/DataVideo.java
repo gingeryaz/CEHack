@@ -40,7 +40,7 @@ public class DataVideo extends AppCompatActivity {
     }
 
     public void videoplay (View v){
-        String videopath = "android.resource://com.example.bytesizec/"+ R.raw.abcd;
+        String videopath = "android.resource://com.example.bytesizec/"+ R.raw.datavid;
         Uri uri= Uri.parse(videopath);
         videov.setVideoURI(uri);
         videov.setMediaController(mediaC);
